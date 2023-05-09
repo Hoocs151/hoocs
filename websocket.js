@@ -44,7 +44,7 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
       rpcDetails.innerText = "I'm not currently playing anything"
       rpcState.innerText = ""
       document.getElementById("rpcIcon").src = `game.png`;
-      document.getElementById("rpcSmallIcon").src = `https://neksio.wtf/transparent.png`;
+      document.getElementById("rpcSmallIcon").src = `https://raw.githubusercontent.com/Hoocs151/hoocs/main/images/transparent.png`;
     }
   });
 
@@ -82,7 +82,7 @@ webSocket.addEventListener("message", (event) => {
       rpcDetails.innerText = "I'm not currently playing anything"
       rpcState.innerText = ""
       document.getElementById("rpcIcon").src = `game.png`;
-      document.getElementById("rpcSmallIcon").src = `https://neksio.wtf/transparent.png`;
+      document.getElementById("rpcSmallIcon").src = `https://raw.githubusercontent.com/Hoocs151/hoocs/main/images/transparent.png`;
     }
   }
 });
