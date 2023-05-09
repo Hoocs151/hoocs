@@ -157,12 +157,11 @@ body{
     font-weight: 800!important;
     color: transparent;
     animation: 2s ease-in-out infinite text-gradient;
-    text-shadow: 0 0 10px #f39f6e!important;
     -webkit-background-clip: text!important;
     background-clip: text!important;
-    background: -webkit-linear-gradient(left,#f39f6e,#ff8d4b);
-    background: -moz-linear-gradient(left,#f39f6e,#ff8d4b);
-    background: linear-gradient(to right,#f39f6e,#ff8d4b);
+    background: -webkit-linear-gradient(left,#f5600a,#fa9961);
+    background: -moz-linear-gradient(left,#f5600a,#fa9961);
+    background: linear-gradient(to right,#f5600a,#fa9961);
     background-size: 200% 100%;
     background-position: 0 50%;
 }
