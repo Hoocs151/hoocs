@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   
+   <title>hoocs is is me</title>
+   <link rel="icon" type="image/x-icon" href="images/ava.png">
+   
+   <meta name="description" content="Hoocs" />
+   <meta name="keywords" content="Hoocs" />
+
+   <meta content="Hoocs" property="og:title" />
+   <meta content="Hoocs" property="og:description" />
+   <meta content="http://1/" property="og:url" />
+   <meta content="images/ava.png" property="og:image">
+   <meta content="#2b2d31" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+   <div id="container">
+   <div class="clockContainer">
+      <div class="clockTimezone"></div>
+      <div class="clock"></div>
+   </div>
+   <div class="center">
+      <h1 class="nameMain">Hello, I'm <span id="nameHoocs" class="nameHoocs">Hoocs</span></h1>
+      <p class="smallerMain">I have a strong interest in coding, but I have never been serious about it. 🥴</p>
+     <div class="panel discordPanel">
+      <i class="discord fa-brands fa-discord"></i>
+      <div class="statusCircle" id="statusCircle"></div>
+      <a id="avatarLink" target="_blank" href=""><img class="discordAvatar" id="discordAvatar" src="images/transparent.png"></a>
+      <p class="discordName" id="discordName"></p>
+      <p class="discordMotd" id="discordMotd"></p>
+   </div>
+      <div class="gap"></div>
+      <div id="rpcPanel" class="panel rpcPanel">  
+      <i class="game fa-solid fa-gamepad"></i>
+      <img class="rpcSmallIcon" id="rpcSmallIcon" src="images/transparent.png">
+      <img class="rpcIcon" id="rpcIcon" src="images/game.png">
+      <p class="rpcName" id="rpcName">Nothing</p>
+      <p class="rpcDetails" id="rpcDetails">I'm not currently playing anything</p>
+   </div>
+   <div class="gap"></div>
+   <div class="panel paymentPanel">
+      <div class="payment">
+         <img src="images/momo.png" alt="MoMo">
+         <div class="paymentInfo">
+            <p class="paymentName">TRAN MINH THAI</p>
+            <p class="paymentNumber" onclick="copyToClipboard('0868360605')">0868360605</p>
+         </div>
+      </div>
+      <div class="payment">
+         <img src="images/mbbank.png" alt="MB Bank">
+         <div class="paymentInfo">
+            <p class="paymentName">TRAN MINH THAI</p>
+            <p class="paymentNumber" onclick="copyToClipboard('0868360605')">0868360605</p>
+         </div>
+      </div>
+      <div class="payment">
+         <img src="images/viettinbank.png" alt="Viettin Bank">
+         <div class="paymentInfo">
+            <p class="paymentName">TRAN MINH THAI</p>
+            <p class="paymentNumber" onclick="copyToClipboard('103872375188')">103872375188</p>
+         </div>
+      </div>
+   </div>
+   </div>
+   </div>
+   
+   <script src="websocket.js"></script>
+</body>
+</html>

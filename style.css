@@ -1,0 +1,286 @@
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:
+           linear-gradient(
+             rgba(10, 10, 12, 0.9), 
+             rgba(10, 10, 12, 0.9)
+           ),
+           url(images/bg.webp);
+}
+
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
+
+@keyframes init {
+    0%   {
+        opacity: 0.0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1.0;
+        transform: translateY(0%);
+    }
+}
+
+.discordPanel {
+    transition: 0.3s;
+    animation-name: init;
+    animation-duration: 1s;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0f0f12;
+    box-shadow: rgba(0, 0, 0, 0.500) 0 2px 8px;
+    border: 1.5px solid hsla(0, 0%, 76%, 0.020);
+    width: 400px;
+    height: 75px;
+}
+
+.discordAvatar {
+    margin-right:15px;
+    float: left;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.discordName {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.discordMotd {
+    margin-top: -13px;
+    font-size: 12.5px;
+    color: #747474;
+}
+
+.statusCircle {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 60px;
+    background-color: #0f0f12;
+    border: 5px solid #0f0f12;
+}
+
+.rpcPanel {
+    transition: 0.3s;
+    animation-name: init;
+    animation-duration: 1s;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0f0f12;
+    box-shadow: rgba(0, 0, 0, 0.500) 0 2px 8px;
+    border: 1.5px solid hsla(0, 0%, 76%, 0.020);
+    width: 400px;
+    height: 75px;
+}
+
+.rpcIcon {
+    margin-right:15px;
+    float: left;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.rpcSmallIcon {
+    border-radius: 100%;
+    margin-left: 60px;
+    margin-top: 60px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.rpcName {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.rpcDetails {
+    margin-top: -13px;
+    font-size: 12.5px;
+    color: #747474;
+}
+
+.center {
+    top:50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%, 0);
+    position: absolute;
+}
+
+.nameMain {
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.500) 0 2px 8px;
+    animation-name: init;
+    animation-duration: 1s;
+    color: #ffe2d1;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -200px;
+}
+
+.smallerMain {
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.500) 0 2px 8px;
+    animation-name: init;
+    animation-duration: 1s;
+    margin-top: -25px;
+    color: #747474;
+    font-weight: 500;
+    font-size: 15px;
+    max-width: 400px;
+}
+
+.nameHoocs {
+    white-space: nowrap!important;
+    text-shadow: none!important;
+    font-weight: 800!important;
+    color: transparent;
+    animation: 2s ease-in-out infinite text-gradient;
+    text-shadow: 0 0 10px #f39f6e!important;
+    -webkit-background-clip: text!important;
+    background-clip: text!important;
+    background: -webkit-linear-gradient(left,#f39f6e,#ff8d4b);
+    background: -moz-linear-gradient(left,#f39f6e,#ff8d4b);
+    background: linear-gradient(to right,#f39f6e,#ff8d4b);
+    background-size: 200% 100%;
+    background-position: 0 50%;
+}
+
+@keyframes text-gradient {
+    0%,100% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+.gap {
+    margin-top: 20.5px;
+}
+
+.clock {
+    margin-top: 2px;
+}
+
+.clockContainer {
+   opacity: 0.3;
+   padding: 15px; 
+   color: #747474;
+}
+
+.discord {
+    font-size: 20px;
+    float: right;
+    color: #5865F2;
+}
+
+.game {
+    font-size: 20px;
+    float: right;
+    color: #868585;
+}
+
+.paymentPanel {
+    transition: 0.3s;
+    animation-name: init;
+    animation-duration: 1s;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0f0f12;
+    box-shadow: rgba(0, 0, 0, 0.500) 0 2px 8px;
+    border: 1.5px solid hsla(0, 0%, 76%, 0.020);
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-basis: calc(33.33% - 10px);
+    max-width: 200px;
+    margin-right: 10px; 
+}
+
+.payment:last-child {
+    margin-right: 0; 
+}
+
+.payment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.paymentInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentName {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.paymentNumber {
+    text-align: center;
+    color: #c4c0c0;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.2;
+    margin-top: 3px;
+}
+
+.paymentNumber:hover {
+    text-decoration: underline;
+}
+
+img {
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .panel {
+        width: 300px;
+    }
+
+    .smallerMain {
+        max-width: 300px;
+    }
+}
+
+
