@@ -59,7 +59,7 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
       rpcName.innerText = "None"
       rpcDetails.innerText = "I'm not currently playing anything"
       rpcState.innerText = ""
-      document.getElementById("rpcIcon").src = `game.png`;
+      document.getElementById("rpcIcon").src = `https://hoocs151.github.io/hoocsxyz/images/game.png`;
       document.getElementById("rpcSmallIcon").src = `https://raw.githubusercontent.com/Hoocs151/hoocs/main/images/transparent.png`;
     }
   });
@@ -97,8 +97,8 @@ webSocket.addEventListener("message", (event) => {
       rpcName.innerText = "None"
       rpcDetails.innerText = "I'm not currently playing anything"
       rpcState.innerText = ""
-      document.getElementById("rpcIcon").src = `game.png`;
-      document.getElementById("rpcSmallIcon").src = `https://raw.githubusercontent.com/Hoocs151/hoocs/main/images/transparent.png`;
+      document.getElementById("rpcIcon").src = `https://hoocs151.github.io/hoocsxyz/images/game.png`;
+      document.getElementById("rpcSmallIcon").src = `https://hoocs151.github.io/hoocsxyz/images/transparent.png`;
     }
   }
 });
