@@ -7,10 +7,26 @@ let rpcDetails = document.getElementById("rpcDetails");
 
 let webSocket = new WebSocket("wss://api.lanyard.rest/socket");
 let discordID = "627013557695021087";
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text);
-  alert('The account number has been copied: ' + text);
+
+function updateClock() {
+  const clock = document.querySelector('.clock');
+  const clockTimezone = document.querySelector('.clockTimezone');
+
+  // lấy thời gian hiện tại
+  const now = moment();
+
+  // định dạng ngày giờ
+  const time = now.format('HH:mm:ss');
+  const timezone = now.format('ddd, D MMM YYYY');
+
+  // hiển thị ngày giờ
+  clock.innerHTML = time;
+  clockTimezone.innerHTML = timezone;
 }
+
+// cập nhật thời gian mỗi giây
+setInterval(updateClock, 1000);
+
 fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
   .then((response) => response.json())
   .then((e) => {

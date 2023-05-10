@@ -9,15 +9,27 @@ html {
     font-family: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-body{
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
     background:
-           linear-gradient(
-             rgba(10, 10, 12, 0.9), 
-             rgba(10, 10, 12, 0.9)
-           ),
-           url(images/bg.webp);
+    linear-gradient(
+        rgba(10, 10, 12, 0.9), 
+        rgba(10, 10, 12, 0.9)
+      ),
+    url('/images/pag.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation-name: cac;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cac {
+    0%   {background-position: 0% 50%;}
+    50%  {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
 ::-webkit-scrollbar {
@@ -56,6 +68,12 @@ body{
     border-radius: 10px;
     width: 75px;
     height: 75px;
+    transition: all 0.3s ease;
+
+}
+  
+.discordAvatar:hover {
+    transform: scale(1.1);
 }
 
 .discordName {
@@ -78,7 +96,26 @@ body{
     margin-top: 60px;
     background-color: #0f0f12;
     border: 5px solid #0f0f12;
+    animation-name: cac4;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
+
+@keyframes cac4 {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
 
 .rpcPanel {
     transition: 0.3s;
@@ -131,13 +168,20 @@ body{
 .nameMain {
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.500) 0 2px 8px;
-    animation-name: init;
+    animation-name: hihih;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
     color: #ffe2d1;
     font-weight: 500;
     font-size: 30px;
     margin-top: -200px;
 }
+
+@keyframes hihih {
+    to {
+      opacity: 1;
+    }
+  }
 
 .smallerMain {
     text-align: center;
@@ -188,7 +232,7 @@ body{
    opacity: 0.3;
    padding: 15px; 
    color: #747474;
-}
+ }
 
 .discord {
     font-size: 20px;
@@ -200,7 +244,26 @@ body{
     font-size: 20px;
     float: right;
     color: #868585;
+    transition: all 0.3s ease;
 }
+
+.game:hover {
+    color: #f5600a;
+    animation-name: say;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes say {
+    0% {
+      color: #868585;
+    }
+    50% {
+      color: #fa9961;
+    }
+    100% {
+      color: #f5600a;
+    }
+  }
 
 .paymentPanel {
     transition: 0.3s;
@@ -260,6 +323,8 @@ body{
 }
 
 .paymentNumber {
+    display: flex;
+    align-items: center;
     text-align: center;
     color: #c4c0c0;
     font-weight: 500;
@@ -269,8 +334,15 @@ body{
     margin-top: 3px;
 }
 
-.paymentNumber:hover {
-    text-decoration: underline;
+.paymentNumber i {
+    margin-left: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #c4c0c0;
+}
+
+.paymentNumber:hover i {
+    color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
