@@ -9,7 +9,7 @@ let webSocket = new WebSocket("wss://api.lanyard.rest/socket");
 let discordID = "627013557695021087";
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text);
-  alert('"The account number has been copied:" ' + text);
+  alert('The account number has been copied: ' + text);
 }
 fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
   .then((response) => response.json())

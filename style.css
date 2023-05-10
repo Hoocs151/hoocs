@@ -235,6 +235,11 @@ body{
     height: 50px;
     border-radius: 10px;
     margin-right: 10px;
+    transition: 0.3s;
+}
+
+.payment:hover img {
+    transform: scale(1.1);
 }
 
 .paymentInfo {
@@ -268,10 +273,6 @@ body{
     text-decoration: underline;
 }
 
-img {
-    transition: 0.3s;
-}
-
 @media screen and (max-width: 1200px) {
     .panel {
         width: 300px;
@@ -281,5 +282,3 @@ img {
         max-width: 300px;
     }
 }
-
-
